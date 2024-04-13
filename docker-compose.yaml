@@ -1,0 +1,27 @@
+
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    deploy:
+      mode: replicated
+      replicas: 1
+    command: ["npm","run","start"]
+
+  nginx:
+    build:
+        context: ./server
+        dockerfile: Dockerfile
+    ports:
+        - 80:80
+    deploy:
+      mode: replicated
+      replicas: 1
+    depends_on:
+      - api
+
+
