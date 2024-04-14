@@ -8,11 +8,11 @@ export default function Footer() {
             <div className="col-span-4">
                 <div className="c">
                     {/* <Image src={Icon} alt="" className='inline-block' /> */}
-                    <span className='font-custome text-[#047857] text-lg font-semibold col-start-1 col-span-2'> Smart Harvest </span>
+                    <span className='font-custome text-[#047857] text-lg font-semibold col-start-1 col-span-2'> CyberEye </span>
                 </div>
                 <div className="mt-5">
                     <p className='text-sm text-slate-600 max-w-[300px] leading-7'>
-                        Smart Harvest là giải pháp AI hỗ trợ nông dân quản lý cây trồng và chẩn đoán bệnh cây, nhằm tối ưu hóa sản xuất nông nghiệp và tạo nền nông nghiệp bền vững.
+                        CyberEye is a security platform that provides advanced threat detection capabilities for sophisticated attacks.
                     </p>
                 </div>
             </div>
