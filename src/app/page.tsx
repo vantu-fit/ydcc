@@ -21,69 +21,6 @@ const itemBlock = [
   },
 ]
 
-const problemBlock = [
-  {
-    title: "Docker Desktop",
-    description: "Docker Desktop is an application for MacOS and Windows machines for the building and sharing of containerized applications and microservices.",
-    icon: <BookMarked size={32} />,
-  },
-  {
-    title: "Docker Hub",
-    description: "Docker Hub is the world's easiest way to create, manage, and deliver your teams' container applications.",
-    icon: <Factory size={32} />,
-  },
-  {
-    title: "Docker Engine",
-    description: "Docker Engine is the industry-leading container runtime and is the foundation of Docker containers.",
-    icon: <Terminal size={32} />,
-  },
-  {
-    title: "Docker Desktop",
-    description: "Docker Desktop is an application for MacOS and Windows machines for the building and sharing of containerized applications and microservices.",
-    icon: <BookMarked size={32} />,
-  },
-  {
-    title: "Docker Hub",
-    description: "Docker Hub is the world's easiest way to create, manage, and deliver your teams' container applications.",
-    icon: <Factory size={32} />,
-  },
-  {
-    title: "Docker Engine",
-    description: "Docker Engine is the industry-leading container runtime and is the foundation of Docker containers.",
-    icon: <Terminal size={32} />,
-  },
-  {
-    title: "Docker Desktop",
-    description: "Docker Desktop is an application for MacOS and Windows machines for the building and sharing of containerized applications and microservices.",
-    icon: <BookMarked size={32} />,
-  },
-  {
-    title: "Docker Hub",
-    description: "Docker Hub is the world's easiest way to create, manage, and deliver your teams' container applications.",
-    icon: <Factory size={32} />,
-  },
-  {
-    title: "Docker Engine",
-    description: "Docker Engine is the industry-leading container runtime and is the foundation of Docker containers.",
-    icon: <Terminal size={32} />,
-  },
-  {
-    title: "Docker Desktop",
-    description: "Docker Desktop is an application for MacOS and Windows machines for the building and sharing of containerized applications and microservices.",
-    icon: <BookMarked size={32} />,
-  },
-  {
-    title: "Docker Hub",
-    description: "Docker Hub is the world's easiest way to create, manage, and deliver your teams' container applications.",
-    icon: <Factory size={32} />,
-  },
-  {
-    title: "Docker Engine",
-    description: "Docker Engine is the industry-leading container runtime and is the foundation of Docker containers.",
-    icon: <Terminal size={32} />,
-  }
-
-]
 
 
 
@@ -120,18 +57,7 @@ export default function Home() {
       <div className="v">
         <div className="font-bold text-2xl"> Solve Problems </div>
         <div className="grid grid-cols-4 gap-4">
-          {problemBlock.map((item, index) => (
-            <div className='flex flex-col items-start w-full rounded-md shadow-md hover:shadow-xl transition-all gap-5 p-5' key={index}>
-              <div className="flex gap-4">
-                {item.icon}
-                <h2 className="font-semibold text-2xl"> {item.title} </h2>
-              </div>
-              <p className="text-sm">  {item.description} </p>
-              <ul>
-                <li> <a href="#" className="text-blue-500"> Overview </a> </li>
-              </ul>
-            </div>
-          ))}
+         
         </div>
 
       </div>
