@@ -6,12 +6,12 @@ import { BookMarked, Download, Factory, Terminal } from "lucide-react";
 const itemBlock = [
   {
     title: "Guide",
-    description: "Learn how to install Docker for Mac, Windows, or Linux and explore our developer tools.",
+    description: "Learn how to install CyberEye for Mac, Windows, or Linux and explore our developer tools.",
     icon: <BookMarked size={32} />,
   },
   {
     title: "Manuals",
-    description: "Access the official Docker documentation, including the Docker Engine, Docker Compose, and Docker Desktop.",
+    description: "Access the official CyberEye documentation.",
     icon: <Factory size={32} />,
   },
   {
@@ -143,8 +143,8 @@ export default function Home() {
 const DownloadBlock = () => {
   return (
     <div className='p-4 flex flex-col items-start w-full h-[200px] rounded-md border-[#000000] border-2 shadow-md gap-5 background text-white'>
-      <h2 className="font-semibold text-3xl"> Get NameApp </h2>
-      <p> Learn how to install Docker for Mac, Windows, or Linux and explore our developer tools.</p>
+      <h2 className="font-semibold text-3xl"> Get CyberEye </h2>
+      <p>CyberEye is your real-time security API. It analyzes logs, code, and behavior to detect threats and vulnerabilities before they strike</p>
       <Button className='mt-4'> <Download className="mr-2" /> Download </Button>
     </div>
   )

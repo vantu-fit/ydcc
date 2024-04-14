@@ -4,29 +4,47 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import Link from "next/link"
 
 export function MenuleftDocumentaion() {
     return (
         <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-0" className="font-semibold py-4"> Getting started </AccordionItem>
             <AccordionItem value="item-1">
-                <AccordionTrigger> Installation</AccordionTrigger>
+                <Link href={"/documentation"}> <AccordionTrigger> Installation</AccordionTrigger></Link>
                 <AccordionContent>
-                    Yes. It adheres to the WAI-ARIA design pattern.
+                    Settup your environment and install the necessary dependencies.
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-                <AccordionTrigger>Is it styled?</AccordionTrigger>
+                <Link href={"/core"} > <AccordionTrigger>Core Features</AccordionTrigger></Link>
                 <AccordionContent>
-                    Yes. It comes with default styles that matches the other
-                    components&apos; aesthetic.
+                    Threat Detection
                 </AccordionContent>
+                <AccordionContent>
+                    Code Analysis
+                </AccordionContent>
+                <AccordionContent>
+                    Customizable Reports
+                </AccordionContent>
+                <AccordionContent>
+                    Threat Detection
+                </AccordionContent>
+                <AccordionContent>
+                    Threat Detection
+                </AccordionContent>
+
             </AccordionItem>
             <AccordionItem value="item-3">
-                <AccordionTrigger>Is it animated?</AccordionTrigger>
+                <Link href={"/advance"}> <AccordionTrigger>Advanced Features (Optional)</AccordionTrigger></Link>
                 <AccordionContent>
-                    Yes. It&apos;s animated by default, but you can disable it if you
-                    prefer.
+                    Behavioral Analysis
+                </AccordionContent>
+                <AccordionContent>
+                    Sandbox Testing
+                </AccordionContent>
+                <AccordionContent>
+                    Behavioral Analysis
                 </AccordionContent>
             </AccordionItem>
         </Accordion>
