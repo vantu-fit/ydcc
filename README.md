@@ -1,37 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CyberEye
+
+Welcome to CyberEye, your real-time security API. CyberEye analyzes logs, code, and behavior to detect threats and vulnerabilities before they strike.
+
+## Features
+
+- **Guide**: Learn how to install CyberEye for Mac, Windows, or Linux and explore our developer tools.
+- **Manuals**: Access the official CyberEye documentation.
+- **Reference**: Browse CLI and API documentation, access training and resources, and more.
 
 ## Getting Started
 
-First, run the development server:
+Learn Docker basics and the benefits of containerizing your applications.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker-compose up -d
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Accelerate your builds with cloud capabilities.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Dashboard**: Access the CyberEye dashboard.
+- **Docs**: Explore the CyberEye documentation.
 
-## Learn More
+## Demo
 
-To learn more about Next.js, take a look at the following resources:
+Check out the [CyberEye Demo](http://cybereye.edubox.io.vn) to see CyberEye in action.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We welcome contributions from the community. Feel free to fork this repository, make changes, and submit pull requests.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# ydcc
+## Contact
+
+For any inquiries or support, please contact us at support@cybereye.com.

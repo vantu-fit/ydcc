@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import Bg from "../assets/image/background-download1.jpg"
 import Image from 'next/image'
 import { BookMarked, Download, Factory, Terminal } from "lucide-react";
+import Link from "next/link";
+
+
 
 const itemBlock = [
   {
@@ -57,7 +60,7 @@ export default function Home() {
       <div className="v">
         <div className="font-bold text-2xl"> Solve Problems </div>
         <div className="grid grid-cols-4 gap-4">
-         
+
         </div>
 
       </div>
@@ -71,7 +74,7 @@ const DownloadBlock = () => {
     <div className='p-4 flex flex-col items-start w-full h-[200px] rounded-md border-[#000000] border-2 shadow-md gap-5 background text-white'>
       <h2 className="font-semibold text-3xl"> Get CyberEye </h2>
       <p>CyberEye is your real-time security API. It analyzes logs, code, and behavior to detect threats and vulnerabilities before they strike</p>
-      <Button className='mt-4'> <Download className="mr-2" /> Download </Button>
+      <Link href={"https://github.com/pnngnas/ydcc-app.git"}> <Button className='mt-4' > <Download className="mr-2" /> Download </Button></Link>
     </div>
   )
 }
