@@ -10,7 +10,7 @@ UPLOAD_FOLDER = "upload"
 ALLOWED_EXTENSIONS = {"jpg" , "pcap"}
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 app.config["JSON_AS_ASCII"] = False
-app.config["MAX_CONTENT_LENGTH"] = 102400000
+app.config["MAX_CONTENT_LENGTH"] = 102400000000
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -35,13 +35,14 @@ def predict():
 
 @app.route("/upload", methods=['POST'])
 def handleFileUpload():
+    photo = ""
     if 'file' in request.files:
         photo = request.files['file']
         if photo.filename != '':
             filepath = os.path.join('api-ai/upload/', photo.filename.split('/')[-1])
             photo.save(filepath)
     
-    cmd_command = "cicflowmeter -f /data/input/"+ "photo.filename.split("/")[-1]"+".pcap -c /data/output/o.csv"
+    cmd_command = "cicflowmeter -f upload/"+ photo.filename.split("/")[-1] +".pcap -c o.csv"
 
 # Sử dụng subprocess để chạy lệnh
     process = subprocess.Popen(cmd_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
